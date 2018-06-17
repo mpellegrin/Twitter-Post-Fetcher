@@ -318,9 +318,8 @@
             author: authors[n] ? authors[n].innerHTML : 'Unknown Author',
             author_data: {
               profile_url: authors[n] ? authors[n].querySelector('[data-scribe="element:user_link"]').href : null,
-              profile_image: authors[n] ? 
-              'https://twitter.com/' + authors[n].querySelector('[data-scribe="element:screen_name"]').title.split('@')[1] + '/profile_image?size=bigger' : null,
-              profile_image_2x: authors[n] ? 'https://twitter.com/' + authors[n].querySelector('[data-scribe="element:screen_name"]').title.split('@')[1] + '/profile_image?size=original' : null,
+              profile_image: authors[n] ? authors[n].querySelector('[data-scribe="element:avatar"]').src : null,
+              profile_image_2x: authors[n] ? authors[n].querySelector('[data-scribe="element:avatar"]').src : null,
               screen_name: authors[n] ? authors[n].querySelector('[data-scribe="element:screen_name"]').title : null,
               name: authors[n] ? authors[n].querySelector('[data-scribe="element:name"]').title : null
             },
